@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+
+	/*Make dropdown links appear inline*/
+	nav {
+
+		#nav-main {
+			position: static;
+			background-color: $teal;
+			padding:2%;
+			display: none;
+
+			&:first-child {
+				margin-top: 1em;
+
+			>li {
+			&:nth-of-type(2) {
+				margin-right: 0;
+			}
+			&:nth-of-type(3) {
+				margin-left: 0;
+			}
+		}
+			}
+		
+		/*Create vertical spacing*/
+		li {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 1px;
+			width: 100%;
+			text-align: left;
+		}
+
+		a {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+	}
+	}
+	
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+
+	.content {
+		margin: 0;
+		padding:0;
+		margin-top: 8em;
+
+		//padding-top: 1em;
+
+		.title {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		padding: 1% 2%;
+		}
+
+		.card, .about .card {
+	    	width: 96%;
+	    	//border-radius: 0;
+	    	//margin: 1%;
+	    	float: none;
+	    	//margin: 0 auto;
+	    	}	
+	}
+
+	.contact {
+		#contactForm {
+			 label, input, textarea, select, button {
+				width: 100%;
+				float: none;
+			
+			input.mailinglist {
+				width: 20px;
+				//clear: both;
+				display: inline-block;
+				float: left;
+			}
+			label.mailinglist {
+				float: left;
+				width: auto;
+				display: inline-block;
+			}
+		}
+	} }
+
+
+    
+    footer {
+		.hours, .location {
+			float: none;
+			text-align: center;
+			padding-bottom: 1em;
+		}
+		
+    } // end footer
+
+	.home {
+		.show-menu {
+			background-color: $teal;
+			border-radius: 5px;
+			margin: 1%;
+			position: fixed;
+		}
+	
+		#nav-main {
+			background-color: transparent;
+			margin: 1%;	
+			position: fixed;
+
+		}
+	}
+}// end mobile media query

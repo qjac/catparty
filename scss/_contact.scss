@@ -1,0 +1,72 @@
+.contact {
+	background: url(../imgs/bg-contact.jpg)no-repeat center center fixed; 
+  	background-size: cover; 
+
+  #contactForm {
+  	color: black;
+  	width: 98%;
+  	padding: 5px 1%;
+	
+	fieldset{
+		border: none;
+	}
+	button, input, select, textarea {
+  		font-family : inherit;
+  		font-size   : 100%;
+		}
+	input, textarea, select, button {
+  		width : 65%;
+  		margin: 0;
+  		box-sizing: border-box;
+		}
+
+	textarea {
+  		vertical-align: top;
+	}
+
+	input:focus, textarea:focus {
+  		background   : rgba($gray-lt,.5);
+  		//border-radius: 5px;
+  		outline      : none;
+		}
+  	
+  	label {
+	//display: block;
+	clear: left;
+	float: left;
+	width: 30%;
+	text-align: right;
+	padding: 7px 15px 0 0;	
+	font-weight: bold;
+	}
+
+	.mailinglist {
+				display: inline;
+			}
+
+
+	label.error {
+	  font-size: 0.8em;
+	  color: $purple;
+	  font-weight: bold;
+	  display: inline-block;
+	  clear: both;
+	  float: left;
+	  text-align: center;
+	}
+	input.error, #contactForm select.error  {
+  		background: $yellow;
+  		border: 1px solid $teal;
+  		clear: both;
+	}
+	p {
+		clear: both;
+	}
+
+	.submit {
+		width: 100px;
+		height: 1.5em;
+		float: right;
+	}			
+  }	
+}

@@ -1,0 +1,19 @@
+.scrollbar {
+	clear: both;
+	background-color: $gray-lt;
+	color: black;
+	padding: 10px 2% 0;
+	width: 100%;
+	z-index: 5;
+	overflow: hidden;
+	
+	h3 {
+		text-align: center;
+	}
+}
+
+#scroll {
+	background-color: none;
+	color: black;
+}
+

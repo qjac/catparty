@@ -1,0 +1,424 @@
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 8, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+/* line 16, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+body {
+  background-color: #3E4248;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif; }
+  /* line 20, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+  body .container {
+    margin: 0 auto; }
+  /* line 24, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+  body h1, body h2, body h3 {
+    font-family: "Wellfleet", Rockwell, "Courier New", serif; }
+  /* line 26, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+  body h1 {
+    color: white; }
+  /* line 28, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+  body h2 {
+    color: #554375; }
+  /* line 30, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+  body li {
+    list-style-type: none; }
+  /* line 34, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+  body a {
+    text-decoration: none;
+    color: #554375; }
+    /* line 38, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_base.scss */
+    body a:hover {
+      text-decoration: underline; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+.logo {
+  z-index: 10;
+  height: 130px;
+  position: fixed;
+  vertical-align: middle;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%); }
+  /* line 8, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+  .logo:hover {
+    border-bottom: none;
+    text-decoration: none; }
+
+/* line 15, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+nav {
+  font: 1.25em "Wellfleet", Rockwell, "Courier New", serif;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #208CA6;
+  height: 4em; }
+  /* line 24, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+  nav ul {
+    padding: .25em;
+    text-align: center; }
+    /* line 27, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+    nav ul:first-child {
+      padding-left: 0; }
+    /* line 30, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+    nav ul li {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0 1%; }
+    /* line 37, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+    nav ul a {
+      color: #E5A430;
+      margin: 0 1%;
+      text-decoration: none;
+      text-align: center; }
+      /* line 43, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+      nav ul a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid; }
+  /* line 50, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+  nav .current {
+    color: #3E4248; }
+  /* line 55, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+  nav #nav-main > li:nth-of-type(2) {
+    margin-right: 75px; }
+  /* line 58, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+  nav #nav-main > li:nth-of-type(3) {
+    margin-left: 75px; }
+
+/*Style 'show menu' label button and hide it by default*/
+/* line 65, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+.show-menu {
+  text-decoration: none;
+  font: 1.25em "Wellfleet", Rockwell, "Courier New", serif;
+  color: #E5A430;
+  position: fixed;
+  padding: 2%;
+  z-index: 100;
+  display: none; }
+
+/*Hide checkbox*/
+/* line 77, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+input#show-menu {
+  opacity: 0; }
+
+/*Show menu when invisible checkbox is checked*/
+/* line 82, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_nav.scss */
+input#show-menu:checked ~ nav > #nav-main {
+  display: block; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_content.scss */
+.content {
+  width: 100%;
+  display: inline-block;
+  padding: 1% 2% 4%;
+  margin-top: 6em; }
+
+/* line 12, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_content.scss */
+.title {
+  width: 20%;
+  text-align: right;
+  padding: .25em 2%;
+  position: fixed;
+  right: 2%;
+  bottom: 55%;
+  text-align: right;
+  font-size: 3em; }
+
+/* line 27, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_content.scss */
+.card {
+  background-color: rgba(160, 168, 188, 0.8);
+  border-radius: 4px;
+  padding: 1% 2%;
+  vertical-align: top;
+  width: 70%;
+  display: inline-block;
+  margin: 1% 2%; }
+  /* line 36, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_content.scss */
+  .card p {
+    color: black;
+    padding: .25em 0; }
+  /* line 41, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_content.scss */
+  .card img {
+    width: 98%;
+    height: auto;
+    padding: 5px 1%;
+    border-radius: 4px; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_scroll.scss */
+.scrollbar {
+  clear: both;
+  background-color: #A0A8BC;
+  color: black;
+  padding: 10px 2% 0;
+  width: 100%;
+  z-index: 5;
+  overflow: hidden; }
+  /* line 10, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_scroll.scss */
+  .scrollbar h3 {
+    text-align: center; }
+
+/* line 15, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_scroll.scss */
+#scroll {
+  background-color: none;
+  color: black; }
+
+/* line 2, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+footer {
+  background-color: #208CA6;
+  padding: 20px 2% 10px;
+  font-size: .9em;
+  margin-bottom: -75px;
+  width: 100%;
+  z-index: 6; }
+  /* line 11, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+  footer .hours {
+    float: left; }
+  /* line 14, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+  footer .location {
+    float: right; }
+  /* line 17, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+  footer .foot {
+    clear: both;
+    text-align: center; }
+    /* line 21, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+    footer .foot p {
+      font-size: .9em;
+      color: #A0A8BC; }
+  /* line 27, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+  footer .soc {
+    font-size: 1.25em; }
+    /* line 30, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+    footer .soc .fa-stack {
+      color: #208CA6; }
+    /* line 34, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+    footer .soc .fa-stack:hover, footer .soc .fa-stack:focus, footer .soc i:hover, footer .soc i:focus {
+      color: #E5A430; }
+  /* line 39, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+  footer .nav2 {
+    color: #E5A430;
+    margin-top: -2em;
+    margin-bottom: 5px;
+    position: static; }
+  /* line 46, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_footer.scss */
+  footer a {
+    color: inherit; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_brews.scss */
+.brews {
+  background: url(../imgs/bg-brews.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_brewery.scss */
+.brewery {
+  background: url(../imgs/bg-brewery.jpg) no-repeat bottom center fixed;
+  background-size: cover; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_about.scss */
+.about {
+  background: url(../imgs/bg-about.jpg) no-repeat center center fixed;
+  background-size: cover; }
+  /* line 6, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_about.scss */
+  .about .card {
+    width: 30%; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+.contact {
+  background: url(../imgs/bg-contact.jpg) no-repeat center center fixed;
+  background-size: cover; }
+  /* line 5, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+  .contact #contactForm {
+    color: black;
+    width: 98%;
+    padding: 5px 1%; }
+    /* line 10, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm fieldset {
+      border: none; }
+    /* line 13, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm button, .contact #contactForm input, .contact #contactForm select, .contact #contactForm textarea {
+      font-family: inherit;
+      font-size: 100%; }
+    /* line 17, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm input, .contact #contactForm textarea, .contact #contactForm select, .contact #contactForm button {
+      width: 65%;
+      margin: 0;
+      box-sizing: border-box; }
+    /* line 23, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm textarea {
+      vertical-align: top; }
+    /* line 27, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm input:focus, .contact #contactForm textarea:focus {
+      background: rgba(160, 168, 188, 0.5);
+      outline: none; }
+    /* line 33, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm label {
+      clear: left;
+      float: left;
+      width: 30%;
+      text-align: right;
+      padding: 7px 15px 0 0;
+      font-weight: bold; }
+    /* line 43, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm .mailinglist {
+      display: inline; }
+    /* line 48, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm label.error {
+      font-size: 0.8em;
+      color: #554375;
+      font-weight: bold;
+      display: inline-block;
+      clear: both;
+      float: left;
+      text-align: center; }
+    /* line 57, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm input.error, .contact #contactForm #contactForm select.error {
+      background: #E5A430;
+      border: 1px solid #208CA6;
+      clear: both; }
+    /* line 62, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm p {
+      clear: both; }
+    /* line 66, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_contact.scss */
+    .contact #contactForm .submit {
+      width: 100px;
+      height: 1.5em;
+      float: right; }
+
+/* line 1, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+.home {
+  background: url(../imgs/bg1.jpg) no-repeat center center fixed;
+  background-size: cover; }
+  /* line 6, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+  .home .triangle {
+    background: -webkit-linear-gradient(left top, rgba(32, 140, 166, 0.8) 50%, rgba(32, 140, 166, 0) 51%);
+    background: linear-gradient(to right bottom, rgba(32, 140, 166, 0.8) 50%, rgba(32, 140, 166, 0) 51%);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 500px; }
+  /* line 13, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+  .home .container {
+    min-height: 500px; }
+    /* line 16, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+    .home .container nav {
+      position: static;
+      background-color: transparent; }
+      /* line 22, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+      .home .container nav #nav-main > li:nth-of-type(2) {
+        margin-right: 0; }
+      /* line 25, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+      .home .container nav #nav-main > li:nth-of-type(3) {
+        margin-left: 0; }
+      /* line 30, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+      .home .container nav ul {
+        text-align: left; }
+      /* line 33, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+      .home .container nav li {
+        margin: 0;
+        width: auto;
+        padding-top: 0; }
+    /* line 40, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+    .home .container .logo {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -40%);
+              transform: translate(-50%, -40%);
+      max-height: 95%;
+      min-height: 70%;
+      width: auto; }
+    /* line 49, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+    .home .container .title {
+      position: static;
+      width: auto; }
+    /* line 55, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_home.scss */
+    .home .container .nav2 ul {
+      text-align: center;
+      position: relative;
+      top: 2em; }
+
+@media only screen and (max-width: 768px) {
+  /*Make dropdown links appear inline*/
+  /* line 6, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+  nav #nav-main {
+    position: static;
+    background-color: #208CA6;
+    padding: 2%;
+    display: none;
+    /*Create vertical spacing*/ }
+    /* line 12, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+    nav #nav-main:first-child {
+      margin-top: 1em; }
+      /* line 16, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+      nav #nav-main:first-child > li:nth-of-type(2) {
+        margin-right: 0; }
+      /* line 19, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+      nav #nav-main:first-child > li:nth-of-type(3) {
+        margin-left: 0; }
+    /* line 26, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+    nav #nav-main li {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 1px;
+      width: 100%;
+      text-align: left; }
+    /* line 34, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+    nav #nav-main a {
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+  /*Display 'show menu' link*/
+  /* line 44, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+  .show-menu {
+    display: block; }
+  /* line 48, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+  .content {
+    margin: 0;
+    padding: 0;
+    margin-top: 8em; }
+    /* line 55, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+    .content .title {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 1% 2%; }
+    /* line 62, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+    .content .card, .content .about .card {
+      width: 96%;
+      float: none; }
+  /* line 73, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+  .contact #contactForm label, .contact #contactForm input, .contact #contactForm textarea, .contact #contactForm select, .contact #contactForm button {
+    width: 100%;
+    float: none; }
+    /* line 77, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+    .contact #contactForm label input.mailinglist, .contact #contactForm input input.mailinglist, .contact #contactForm textarea input.mailinglist, .contact #contactForm select input.mailinglist, .contact #contactForm button input.mailinglist {
+      width: 20px;
+      display: inline-block;
+      float: left; }
+    /* line 83, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+    .contact #contactForm label label.mailinglist, .contact #contactForm input label.mailinglist, .contact #contactForm textarea label.mailinglist, .contact #contactForm select label.mailinglist, .contact #contactForm button label.mailinglist {
+      float: left;
+      width: auto;
+      display: inline-block; }
+  /* line 92, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+  footer .hours, footer .location {
+    float: none;
+    text-align: center;
+    padding-bottom: 1em; }
+  /* line 101, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+  .home .show-menu {
+    background-color: #208CA6;
+    border-radius: 5px;
+    margin: 1%;
+    position: fixed; }
+  /* line 108, /Users/jacquelinequintanilla/Documents/Google Drive/1. MCTC/MCTC Archive/4. Fall 2015/WEBI 1911 Client-Side Scripting/webi1911/catparty/scss/_mobile.scss */
+  .home #nav-main {
+    background-color: transparent;
+    margin: 1%;
+    position: fixed; } }

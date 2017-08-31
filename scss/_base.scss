@@ -1,0 +1,46 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+	padding: 0;
+  }
+
+body {
+	background-color: $gray-dk;
+	font-family: $poppins;
+	
+	.container {
+		margin: 0 auto;
+	}
+
+	h1, h2, h3 {font-family: $wellfleet;}
+
+	h1 {color: white;}
+
+	h2 {color: $purple;}
+
+	li {
+		list-style-type: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: $purple;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+}
+
+
+

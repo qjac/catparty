@@ -1,0 +1,63 @@
+.home {
+	background: url(../imgs/bg1.jpg)no-repeat center center fixed; 
+  	background-size: cover;
+  	
+	
+	.triangle {
+	 	background: linear-gradient(to right bottom, rgba( $teal, .8) 50%, rgba( $teal, 0) 51%);
+		position: relative;
+		width: 100%;
+		height: 100%;
+		min-height: 500px;
+			 }
+	.container {
+		min-height: 500px;
+		
+		nav {
+			position: static;
+			background-color: transparent;
+
+			#nav-main {
+				>li {
+					&:nth-of-type(2) {
+						margin-right: 0;
+					}
+					&:nth-of-type(3) {
+						margin-left: 0;
+					}
+				}
+			}
+			ul {
+				text-align: left;
+			}
+			li {
+				margin: 0;
+				width: auto;
+				padding-top: 0;
+			}
+		}
+	 
+		.logo {
+			position: absolute;
+  			top: 45%;
+  			left: 50%;
+  			transform: translate(-50%, -40%);
+  			max-height: 95%;
+  			min-height: 70%;
+  			width: auto;
+			}
+			.title {
+				
+				position: static;
+	  			width: auto;
+			}
+
+		.nav2 ul {
+			text-align: center;
+			position: relative;
+			top: 2em;
+		}	
+	
+	}
+
+}

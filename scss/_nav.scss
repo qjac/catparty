@@ -1,0 +1,84 @@
+.logo {
+	z-index: 10;
+	height: 130px;
+	position: fixed;
+	vertical-align: middle;
+	left: 50%;
+	transform: translate(-50%, 0%);
+		&:hover {
+		border-bottom: none;
+		text-decoration: none;
+		}
+}
+		
+
+nav {
+	font: 1.25em $wellfleet;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: $teal;
+	height: 4em;
+
+	ul {
+		padding: .25em;
+		text-align: center;
+		&:first-child {
+			padding-left: 0;
+			}
+		li {
+		display: inline-block;
+		margin-top: 2em;
+		padding: 0 1%;
+	}
+
+
+		a {
+		color: $yellow;
+		margin: 0 1%;
+		text-decoration: none;
+		text-align: center;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom: 1px solid;
+		}
+	}
+}
+
+		.current {
+			color: $gray-dk;
+		}
+
+		#nav-main>li {
+			&:nth-of-type(2) {
+				margin-right: 75px;
+			}
+			&:nth-of-type(3) {
+				margin-left: 75px;
+			}
+		}
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	text-decoration: none;
+	font: 1.25em $wellfleet;
+	color: $yellow;
+	position: fixed;
+	padding: 2%;
+	z-index: 100;
+	display: none;
+	
+}
+
+/*Hide checkbox*/
+input#show-menu{
+    opacity:0;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input#show-menu:checked ~ nav>#nav-main {
+    display: block;
+}

@@ -1,0 +1,47 @@
+
+footer {
+	//clear: both;
+	background-color: $teal;
+	padding: 20px 2% 10px;
+	font-size: .9em;
+	margin-bottom: -75px;
+	width: 100%;
+	z-index: 6;
+
+	.hours {
+		float: left;
+	}
+	.location {
+		float: right;
+	}
+	.foot {
+		clear: both;
+		text-align: center;
+
+		p {
+		font-size: .9em;
+		color: $gray-lt;
+		}
+	}
+
+	.soc {
+		font-size: 1.25em;
+
+		.fa-stack {
+			color: $teal;
+			}
+
+		.fa-stack:hover, .fa-stack:focus, i:hover, i:focus {
+				color: $yellow;
+			}
+	}
+	
+	.nav2 {
+		color: $yellow;	
+		margin-top: -2em;
+		margin-bottom: 5px;
+		position: static;
+	}
+
+	a {color: inherit}
+}
